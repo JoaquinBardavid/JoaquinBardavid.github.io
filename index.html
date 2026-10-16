@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asistente</title>
+  <meta name="description" content="Asistente: app personal de Android para notas, gastos y agenda, con los datos en el teléfono.">
+  <style>
+    :root { color-scheme: light dark; --text: #1B1B1F; --muted: #5C5F66; --bg: #F5F6F8; --surface: #FFFFFF; --accent: #1A6FD6; --border: #D5D8DE; }
+    @media (prefers-color-scheme: dark) {
+      :root { --text: #E6E6EA; --muted: #A3A6AD; --bg: #111214; --surface: #1D1E22; --accent: #8AB8FF; --border: #3A3C42; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { font-size: 30px; margin: 0 0 4px; }
+    .lead { color: var(--muted); margin: 0 0 24px; }
+    section { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin: 16px 0; }
+    h2 { font-size: 19px; margin: 0 0 8px; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 15px; margin-top: 32px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Asistente</h1>
+  <p class="lead">App personal de Android para notas, gastos y agenda. La usa una sola persona: su autor.</p>
+
+  <section>
+    <h2>Qué hace</h2>
+    <ul>
+      <li>Notas con etiquetas y búsqueda.</li>
+      <li>Gastos con una entrada rápida (“3500 super débito”), filtros y totales por mes.</li>
+      <li>Dictado: transcribe en el teléfono lo que se dice y lo lleva a la entrada rápida.</li>
+      <li>Eventos en el calendario del teléfono a partir de notas con fecha, y una agenda del mes.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Dónde quedan los datos</h2>
+    <p>Todo se guarda en el teléfono. No hay un servidor propio. Lo que sale del teléfono es
+      siempre algo que el usuario activa: un backup cifrado en su propio Google Drive, y, si lo
+      prende, una copia de las notas en Google Docs y de los gastos en Google Sheets.</p>
+    <p>El detalle está en la <a href="privacidad.html">política de privacidad</a>.</p>
+  </section>
+
+  <section>
+    <h2>Disponibilidad</h2>
+    <p>No se publica en Play Store ni se distribuye a otras personas. Se instala a mano en el
+      teléfono de su autor.</p>
+  </section>
+
+  <footer>
+    <a href="privacidad.html">Política de privacidad</a>
+  </footer>
+</main>
+</body>
+</html>

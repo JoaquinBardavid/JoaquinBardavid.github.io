@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidad de Asistente</title>
+  <meta name="description" content="Política de privacidad de Asistente, app personal de Android.">
+  <style>
+    :root { color-scheme: light dark; --text: #1B1B1F; --muted: #5C5F66; --bg: #F5F6F8; --surface: #FFFFFF; --accent: #1A6FD6; --border: #D5D8DE; }
+    @media (prefers-color-scheme: dark) {
+      :root { --text: #E6E6EA; --muted: #A3A6AD; --bg: #111214; --surface: #1D1E22; --accent: #8AB8FF; --border: #3A3C42; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    .lead { color: var(--muted); margin: 0 0 24px; }
+    section { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin: 16px 0; }
+    h2 { font-size: 19px; margin: 0 0 8px; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    code { font-size: 15px; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 15px; margin-top: 32px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad</h1>
+  <p class="lead">Asistente · vigente desde el 16 de octubre de 2026</p>
+
+  <section>
+    <h2>Resumen</h2>
+    <p>Asistente es una app personal de Android que usa una sola persona: su autor. Guarda las
+      notas, los gastos y la configuración en una base de datos dentro del teléfono. No tiene un
+      servidor propio, no usa analítica ni publicidad, y no vende ni comparte datos con nadie. Lo
+      único que sale del teléfono es lo que el usuario activa, y va a su propia cuenta de Google.</p>
+  </section>
+
+  <section>
+    <h2>Cuenta de Google y Google Drive</h2>
+    <p>La app pide iniciar sesión con Google y, recién cuando el usuario activa una función que
+      lo necesita, el permiso <code>drive.file</code>. Ese permiso solo da acceso a los archivos
+      que crea la propia app: no puede ver ni modificar ningún otro archivo de Drive. Con ese
+      permiso, y solo si el usuario lo activa:</p>
+    <ul>
+      <li><strong>Backup:</strong> una copia de la base de datos, cifrada en el teléfono con una
+        contraseña que elige el usuario, en la carpeta “Asistente backups”. Sin esa contraseña nadie
+        puede leerla, tampoco Google.</li>
+      <li><strong>Notas en Google Docs:</strong> una copia de cada nota en la carpeta
+        “Asistente notas”. Estas copias no van cifradas.</li>
+      <li><strong>Gastos en Google Sheets:</strong> una planilla “Gastos” en la carpeta
+        “Asistente gastos”. Tampoco va cifrada.</li>
+    </ul>
+    <p>Los datos que llegan de Google (nombre y correo de la cuenta, y los archivos que crea la
+      app) se usan solo para estas funciones y no se transfieren a terceros.</p>
+  </section>
+
+  <section>
+    <h2>Calendario</h2>
+    <p>Con el permiso de calendario de Android, la app lee los eventos del teléfono para mostrar
+      la agenda y, cuando el usuario lo confirma, crea un evento a partir de una nota con fecha.
+      La app no manda el calendario a ningún servidor; si el calendario elegido es de una cuenta
+      de Google, Android lo sincroniza como cualquier otro evento.</p>
+  </section>
+
+  <section>
+    <h2>Micrófono y dictado</h2>
+    <p>El dictado usa el reconocimiento de voz de Android en modo sin conexión: el audio se procesa
+      en el teléfono y no se guarda. Hay una opción, apagada por defecto, para usar el reconocimiento
+      en línea en español de Argentina; si el usuario la activa, el audio se manda a los servidores
+      de Google para transcribirlo.</p>
+  </section>
+
+  <section>
+    <h2>Borrar los datos</h2>
+    <ul>
+      <li>Desde la app se puede desconectar la cuenta de Google, lo que revoca el acceso de la app.</li>
+      <li>Desinstalar la app borra todos los datos guardados en el teléfono.</li>
+      <li>Los archivos en Drive, Docs y Sheets quedan en la cuenta del usuario, que los puede borrar
+        cuando quiera.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Cambios y contacto</h2>
+    <p>Si la app cambia lo que hace con los datos, esta página se actualiza con una fecha nueva.
+      Para consultas, a través del repositorio de esta página en GitHub.</p>
+  </section>
+
+  <footer>
+    <a href="index.html">Volver a Asistente</a>
+  </footer>
+</main>
+</body>
+</html>
